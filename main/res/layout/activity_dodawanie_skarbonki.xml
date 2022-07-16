@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dodawanieSkarbonki">
+
+    <EditText
+        android:id="@+id/inputNazwa"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="90dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/InputCel"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputNazwa" />
+
+    <EditText
+        android:id="@+id/inputPoczatkowaWartosc"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:hint="0"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InputCel" />
+
+    <EditText
+        android:id="@+id/inputIle"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:hint="5"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputPoczatkowaWartosc" />
+
+    <Button
+        android:id="@+id/przyciskWroc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="Wróć"
+        app:layout_constraintStart_toStartOf="@+id/inputIle"
+        app:layout_constraintTop_toBottomOf="@+id/inputIle" />
+
+    <Button
+        android:id="@+id/przyciskDodaj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="Dodaj"
+        app:layout_constraintEnd_toEndOf="@+id/inputIle"
+        app:layout_constraintTop_toBottomOf="@+id/inputIle" />
+
+    <TextView
+        android:id="@+id/titleNazwa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Na co zbierasz"
+        app:layout_constraintBottom_toTopOf="@+id/inputNazwa"
+        app:layout_constraintStart_toStartOf="@+id/inputNazwa" />
+
+    <TextView
+        android:id="@+id/titleCel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ile chcesz uzbierać"
+        app:layout_constraintBottom_toTopOf="@+id/InputCel"
+        app:layout_constraintStart_toStartOf="@+id/InputCel" />
+
+    <TextView
+        android:id="@+id/titlePoczatkowaWartosc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Początkowa wartość"
+        app:layout_constraintBottom_toTopOf="@+id/inputPoczatkowaWartosc"
+        app:layout_constraintStart_toStartOf="@+id/inputPoczatkowaWartosc" />
+
+    <TextView
+        android:id="@+id/titleIle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Po ile wrzucasz"
+        app:layout_constraintBottom_toTopOf="@+id/inputIle"
+        app:layout_constraintStart_toStartOf="@+id/inputIle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout >

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvNazwa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/przyciskUsun"
+        android:layout_width="32dp"
+        android:layout_height="39dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSlash"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/przyciskEdytuj"
+        android:layout_width="37dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="15dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/przyciskUsun"
+        app:layout_constraintTop_toBottomOf="@+id/tvSlash"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <TextView
+        android:id="@+id/tvSlash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1000"
+        app:layout_constraintStart_toEndOf="@+id/tvSlash"
+        app:layout_constraintTop_toTopOf="@+id/tvSlash" />
+
+    <TextView
+        android:id="@+id/tvAktualnaIlosc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@+id/tvSlash"
+        app:layout_constraintTop_toTopOf="@+id/tvSlash" />
+
+    <Button
+        android:id="@+id/przyciskIleDodac"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:text="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSlash" />
+
+    <Button
+        android:id="@+id/przyciskUsunzAktualnego"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="15dp"
+        android:text="-"
+        app:layout_constraintEnd_toStartOf="@+id/przyciskIleDodac"
+        app:layout_constraintTop_toTopOf="@+id/przyciskIleDodac" />
+
+    <Button
+        android:id="@+id/przyciskDodajdoAktualnego"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        android:text="+"
+        app:layout_constraintStart_toEndOf="@+id/przyciskIleDodac"
+        app:layout_constraintTop_toTopOf="@+id/przyciskIleDodac" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
